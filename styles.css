@@ -1,0 +1,474 @@
+footer{
+  background-color: purple;
+  padding-top: 40px;
+}
+
+/* Global Box Sizing Rule - Applies to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Column Class */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+body {
+    margin:0;
+}
+
+/* Clearfix for Rows */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Styling for Tables */
+table, td, th, tr {
+  border: 1px solid black;
+}
+
+/* Header Styles */
+.headers {
+  width: 100%;
+}
+
+/* Unordered List (Navigation) Styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* List Item Styles (Navigation) */
+li {
+  float: left;
+}
+
+/* Anchor Link Styles (Navigation) */
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+/* Navigation Link Hover Effect */
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* Active Link Styles */
+.active {
+  background: linear-gradient(to bottom, rgb(62, 3, 62), black);
+}
+
+/* Navigation Bar Styles */
+.nav {
+  background: linear-gradient(to bottom, purple, black);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* List Item Styles (Navigation) */
+.nav li {
+  display: inline-block;
+  font-size: 20 px;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Additional Navigation Styles */
+.nav2 nav {
+  margin-right: 40px;
+}
+
+/* Box Styles for dl, section, and p elements */
+dl.box {
+  width: 800px;
+  padding: 10px;
+  border: 5px solid rgb(137, 14, 148);
+  margin-left: 0px;
+}
+
+section.box {
+  width: 776px;
+  padding: 20px;
+  border: 5px solid rgb(137, 14, 148);
+  margin-left: 0px;
+}
+
+p.box {
+  width: 800px;
+  padding: 10px;
+  border: 5px solid rgb(137, 14, 148);
+  margin-left: 0px;
+}
+
+/* Animation Styles */
+div.anim {
+  float: left;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  align-self: center;
+  align-items: center;
+  position: relative;
+  animation-name: join;
+  animation-duration: 2s;  
+  animation-fill-mode: both;
+}
+
+/* Keyframes for Animation */
+@keyframes join {
+  0%  {}
+  10% {
+        width: 10px;
+        height:10px; 
+  }
+  20% {
+    width: 15px;
+    height:15px; 
+  }
+  30% {
+    width: 20px;
+    height:20px; 
+  }
+  40% {
+    width: 25px;
+    height:25px; 
+  }
+  50% {
+    width: 30px;
+    height:30px; 
+  }
+  60% {
+    width: 35px;
+    height:35px; 
+  }
+  70% {
+    width: 40px;
+    height:40px; 
+  }
+  80% {
+    width: 45px;
+    height:45px; 
+  }
+  90% {
+    width: 50px;
+    height:50px; 
+  }
+  99% {background-color: white;
+    width: 55px;
+    height:55px; 
+  }
+  100% {
+    
+  }
+}
+
+  
+
+
+  li.h1 {
+    float: left;  /* elements of nav must move flow to the left not downwards */ 
+  }
+  
+  
+  li.h1 a{
+    padding: 8px;  /* Spacing around the specific elements of the nav bar must 8px */
+    color: white; /*text color set to while */
+    display: block;
+  }
+.tables{
+    clear:left;
+}
+p.games{
+    color: red;
+}
+.fig{
+    
+        border: 1px #cccccc solid;
+        padding: 4px;
+        margin: auto;
+
+} 
+/* dislapying the img on the main page and make it responsive for other devices*/
+.img1{
+  width: 65%;
+   height: 40%; 
+   display:  block;
+   margin: 0 auto;
+   height:auto; /*this makes the height to decrease when using smaller devices*/
+   
+}
+.img2{
+  width:"100%";
+  height:auto;
+}
+/* making the header always visible for user convinience*/
+.headers{
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  padding-top:20px;
+  background: linear-gradient(to bottom, purple, black);
+  text-align: left;
+}
+
+
+.lin{
+  color:white;
+}
+
+
+
+  
+
+
+
+/* greeting.css */
+
+
+.body-greet {
+  background-image: url(realgreet.webp); /*  URL of  background image */
+  background-size: cover; 
+  background-position: center center;
+  padding: 50px 0; /*  top and bottom padding as needed */
+  font-family: 'Roboto', sans-serif;
+  }
+.greeting-container {
+  text-align: center;
+}
+
+.greeting-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.h1-greet {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.p-greet {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+/* Target the specific ul with the "nav-list" class */
+ul.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Target the specific li elements within ul.nav-list */
+ul.nav-list li {
+  float: left;
+  border-right: 1px solid black;
+}
+
+/* Target the anchor links within ul.nav-list */
+ul.nav-list li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+ul.nav-list li a:hover {
+  background-color: #111;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#multicolumn {
+  column-count: 3;
+  column-rule: 1px solid black;
+  column-fill: auto; 
+  column-gap: 20px; /* Adjust the gap width as needed */
+}
+
+/* Thee SlideShow */
+* {
+  box-sizing: border-box;
+}
+
+img{
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+  padding-top: 20px;
+  padding-left:350px;
+  padding-right: 350px;
+  padding-bottom: 350px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display:none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  color: white;
+  right: 350px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row1::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column1 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* animated-transition */
+#anime1 {
+  background-color: rgb(255, 255, 255);
+  width: 270px;
+  height: 200px;
+  overflow: auto;
+  border-radius: 60px;
+  margin-left:35%
+}
+
+#anime1:hover {
+  background-color: rgb(149, 23, 163);
+  width:450px;
+  height: 400px;
+  padding: 100px;
+  border-radius: 50px;
+  margin-left: 35%
+}
+
+/* borders   */
+
+#border {
+  border: thick solid white;
+}
+
+/* sec animation */ 
+#anime2 {
+  width: 300px;
+  height: 100px;
+  background: rgb(147, 24, 158);
+  color: white;
+  animation: move 3s infinite linear alternate;
+}
+
+@keyframes move {
+  to {transform: rotateY(180deg);}
+}
+
+
+
+
+
